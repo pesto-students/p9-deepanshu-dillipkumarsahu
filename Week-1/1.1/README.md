@@ -10,4 +10,4 @@ When a web browser receives a web page, it uses its built-in parsers to interpre
 
 When a web browser loads a web page, it processes the scripts in a specific order to ensure that the web page behaves as intended. The general order of script processing is HTML parsing then CSS parsing then JavaScript parsing then JavaScript execution then Painting.
 
-![browser_working_model](./browser_working_diagram2.png "Browser Working Model")
+![browser_working_model](./browser_working_diagram.png "Browser Working Model")
