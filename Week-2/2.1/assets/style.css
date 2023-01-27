@@ -38,6 +38,16 @@ p {
     margin-top: 3em;
 }
 
+@media only screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+}
 
 /* header */
 header {
@@ -46,13 +56,14 @@ header {
     padding: 2em 0;
     background: #fff;
     border-bottom: 1px solid #ccc;
-    margin-top: 5em;
+    margin-top: 1em;
 }
 
 @media only screen and (min-width: 768px) {
     header {
         position: sticky;
         top: 0;
+        margin-top: 5em;
     }
 }
 
@@ -108,6 +119,35 @@ section .content-2 div img {
 }
 
 
+@media only screen and (max-width: 768px) {
+    section {
+        padding: 1em 2em;
+    }
+
+    section h2::first-letter {
+        font-size: 1.2em;
+    }
+
+    section .content {
+        margin: 0em;
+        margin-top: 1em;
+    }
+
+    section .content-2 {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    section .content-2.reverse {
+        flex-direction: column-reverse;
+    }
+
+    section .content-2 div {
+        width: 100%;
+        padding: 0em;
+        margin-top: 1.3em;
+    }
+}
 
 /* footer */
 
@@ -157,17 +197,19 @@ footer form div.input-grp-radio div {
     display: flex;
     align-items: center;
 }
+
 footer form div.input-grp-radio div input {
     width: 20px;
     height: 20px;
 }
+
 footer form div.input-grp-radio div label {
     margin-top: 6px;
-     margin-left: 5px;
+    margin-left: 5px;
 }
 
 footer form div label {
-    font-size: 18px;
+    font-size: 1.1em;
 }
 
 footer form div input,
@@ -204,4 +246,19 @@ footer form button {
 footer form button:hover {
     background: #000;
     color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        padding: 1em 0;
+    }
+
+    footer form {
+        width: 90%;
+    }
+
+    footer form button {
+        background: #000;
+        color: #fff;
+    }
 }
