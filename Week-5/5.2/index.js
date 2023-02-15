@@ -1,6 +1,5 @@
 function vowelCount(string) {
   const map = new Map();
-  const key = map.size + 1;
   const vowels = ["a", "e", "i", "o", "u"];
   let count = 0;
   for (const latter of string) {
@@ -11,7 +10,7 @@ function vowelCount(string) {
   }
 
   // store vowel count in map
-  map.set(key, count);
+  map.set(map.size + 1, count);
 
   return map;
 }
