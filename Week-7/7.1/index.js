@@ -11,9 +11,9 @@ function contiguousSubArrayLargestSum(arry) {
           console.log(arry[j]);
         }
       }
-        if (finalSum < largestSum) {
-          finalSum = largestSum;
-        }
+      if (finalSum < largestSum) {
+        finalSum = largestSum;
+      }
       console.log("Largest Sum", largestSum);
     }
   }
@@ -23,3 +23,6 @@ function contiguousSubArrayLargestSum(arry) {
 const res = contiguousSubArrayLargestSum(array);
 console.log("-----------------------");
 console.log("Final largest sum -", res);
+
+// SC - O(N^2)
+// TC - O(1)
