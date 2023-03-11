@@ -1,14 +1,18 @@
 const stock_prices = [7, 1, 5, 3, 6, 4];
 
-function calProfit(prices, buying_day, selling_day) {
-  if (buying_day >= 0 && selling_day <= prices.length - 1) {
-    if (buying_day <= selling_day) {
-      //   console.log(prices[buying_day], prices[selling_day]);
-      return prices[buying_day] - prices[selling_day];
-    } else return "Buying day should be less than Selling day";
-  } else
-    return "Buying day should >= 0 and Selling day should < " + prices.length;
+function maximumProfit(stock_prices) {
+  let maxProfit = 0;
+  let minPrice = stock_prices[0];
+  for (let i = 1; i < stock_prices.length; i++) {
+    if (stock_prices[i] < minPrice) {
+      minPrice = stock_prices[i];
+    } else if (stock_prices[i] - minPrice > maxProfit) {
+      maxProfit = stock_prices[i] - minPrice;
+    }
+  }
+
+  return maxProfit;
 }
 
-const res = calProfit(stock_prices, 1, 5);
+const res = maximumProfit(stock_prices);
 console.log(res);
