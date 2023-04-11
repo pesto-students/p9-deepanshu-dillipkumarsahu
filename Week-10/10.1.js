@@ -1,8 +1,8 @@
 // Input [3, 9, 20, null, null, 15, 7]
 // Output 3
 
-// create tree node
-class TreeNode {
+// create binary tree node
+class BinaryTreeNode {
   constructor(val, left = null, right = null) {
     this.val = val;
     this.left = left;
@@ -23,10 +23,10 @@ function maxDepth(root) {
   }
 }
 
-let root = new TreeNode(
+let root = new BinaryTreeNode(
   3,
-  new TreeNode(9),
-  new TreeNode(20, new TreeNode(15), new TreeNode(7))
+  new BinaryTreeNode(9),
+  new BinaryTreeNode(20, new BinaryTreeNode(15), new BinaryTreeNode(7))
 );
 
 console.log(maxDepth(root));
