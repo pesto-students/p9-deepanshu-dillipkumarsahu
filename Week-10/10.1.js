@@ -1,3 +1,4 @@
+// Calculate maximum depth of binary tree
 // Input [3, 9, 20, null, null, 15, 7]
 // Output 3
 
@@ -12,7 +13,7 @@ class BinaryTreeNode {
 
 // calculate max depth
 function maxDepth(root) {
-  if (root === null) {
+  if (!root) {
     return 0;
   } else {
     let leftDepth = maxDepth(root.left);
