@@ -11,6 +11,12 @@ class BinaryTreeNode {
   }
 }
 
+let root = new BinaryTreeNode(
+  3,
+  new BinaryTreeNode(9),
+  new BinaryTreeNode(20, new BinaryTreeNode(15), new BinaryTreeNode(7))
+);
+
 // calculate max depth
 function maxDepth(root) {
   if (!root) {
@@ -23,11 +29,5 @@ function maxDepth(root) {
     return Math.max(leftDepth, rightDepth) + 1;
   }
 }
-
-let root = new BinaryTreeNode(
-  3,
-  new BinaryTreeNode(9),
-  new BinaryTreeNode(20, new BinaryTreeNode(15), new BinaryTreeNode(7))
-);
 
 console.log(maxDepth(root));
