@@ -25,7 +25,7 @@ function hasPath(n, edges, source, destination) {
   }
   return false;
 }
-
+// 
 const n = 6;
 const edges = [
   [0, 1],
