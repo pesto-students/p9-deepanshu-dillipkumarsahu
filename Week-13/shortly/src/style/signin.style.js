@@ -1,0 +1,17 @@
+export const signinCard = {
+  width: "300px",
+  margin: "0 auto",
+  marginTop: "200px",
+  marginBottom: "200px",
+  // position: "fixed",
+  // top: "50%",
+  // left: "50%",
+  // transform: "translate(-50%,-50%)",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  padding: "20px",
+  background: "#fff",
+  borderRadius: "5px",
+};
