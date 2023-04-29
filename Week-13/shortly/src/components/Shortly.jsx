@@ -2,7 +2,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import ListItem from "./ListItem";
 
-
 const Shortly = ({ user }) => {
     const [url, setUrl] = useState('')
     const [dataList, setDataList] = useState([]);
